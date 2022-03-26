@@ -4,7 +4,7 @@ from cleaning import cleaning, stop_words, stemming
 from wordcloud import WordCloud
 
 
-text = read_csv("True.csv")
+text = read_csv("files/True.csv")
 text = cleaning(text)
 text = stop_words(text)
 list_w = stemming(text)
