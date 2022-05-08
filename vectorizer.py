@@ -11,6 +11,7 @@ tfidf_vec = TfidfVectorizer(tokenizer=text_tokenizer)
 X_transform_tfidf = tfidf_vec.fit_transform(data['title'])
 
 # Top 10 most frequent tokens
+
 tokens_count = pd.DataFrame(X_transform.sum(axis=0),
                             columns=count_vec.get_feature_names_out())
 print(tokens_count.T.sort_values(by=0, ascending=False).head(10))
