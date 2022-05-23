@@ -52,4 +52,3 @@ b_model.fit(X_train_vectors_count, y_train)
 b_predict = b_model.predict(X_test_vectors_count)
 print(f'Bagging \n {classification_report(y_test, b_predict)}')
 print(f'Confusion Matrix \n {confusion_matrix(y_test, b_predict)} \n')
-
